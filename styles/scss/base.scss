@@ -1,0 +1,9 @@
+@import '_vars';
+@import '_global';
+@import '_bg';
+@import '_top';
+
+body {
+    row-gap: 4 * $gap;
+    padding: 0 calc(100vw / 12);
+}

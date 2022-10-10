@@ -1,0 +1,38 @@
+@import '_vars';
+
+.top {
+    height: 1024*$r;
+    padding-top: 217*$r;
+    row-gap: 32*$r;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    &-title {
+        font-size: 64*$r;
+        line-height: calc(78 / 64);
+        font-weight: 700;
+        width: 40%;
+    }
+
+    &-text {
+        font-size: 18*$r;
+        line-height: calc(32 / 18);
+        font-weight: 300;
+        color: #aaa;
+
+        & b {
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+
+    &-button {
+        font-size: 18*$r;
+        margin-top: 12*$r;
+        border-radius: 30*$r;
+        padding: 13*$r 74*$r;
+        width: fit-content;
+        background: #9C0332;
+    }
+}

@@ -1,0 +1,9 @@
+// width values
+$top-img-w: 1440;
+
+// resolutions
+$pc: 1920px;
+
+// units
+$r: calc(100vw / $top-img-w); // resizability
+$gap: calc(100vw / 45);

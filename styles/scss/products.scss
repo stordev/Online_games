@@ -1,0 +1,19 @@
+@import '_vars';
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $gap;
+
+    & div {
+        height: 300*$r;
+        padding: 0 0 $gap $gap;
+        border-radius: 20*$r;
+        font-size: 24*$r;
+        font-weight: 600;
+        grid-column: span 4;
+        color: #fff;
+        display: flex;
+        align-items: end;
+    }
+}
