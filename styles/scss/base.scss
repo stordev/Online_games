@@ -4,6 +4,11 @@
 @import '_top';
 
 body {
-    row-gap: 4 * $gap;
+    row-gap: 128*$r;
     padding: 0 calc(100vw / 12);
+
+    @media screen and (max-width: $mobile) {
+        row-gap: 128*$m;
+        padding: 0 16*$m;
+    }
 }

@@ -1,9 +1,11 @@
 // width values
 $top-img-w: 1440;
+$top-img-w_m: 375; // mobile
 
 // resolutions
 $pc: 1920px;
+$mobile: 767px;
 
 // units
 $r: calc(100vw / $top-img-w); // resizability
-$gap: calc(100vw / 45);
+$m: calc(100vw / $top-img-w_m); // mobile size
