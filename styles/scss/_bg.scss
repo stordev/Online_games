@@ -1,35 +1,39 @@
 .bg {
 
     &--top {
-        background: url(../../img/bg/top/bg-top.jpg) top center / cover no-repeat;
+        background: url(../../img/bg/top/bg--top.jpg) top center / cover no-repeat;
 
         @media screen and (max-width: $mobile) {
-            background: url(../../img/bg/top/bg-top-s.jpg) top center / cover no-repeat;
+            background: url(../../img/bg/top/bg--top--s.jpg) top center / cover no-repeat;
         }
     }
 
-    &--game1 {
-        background: url(../../img/bg/game_covers/bg-game_1.jpg) center / cover no-repeat;
+    &--game {
+        &1 {
+            background: url(../../img/bg/games/gm1/bg--gm1_cover.jpg) center / cover no-repeat;
 
-        @media screen and (max-width: $mobile) {
-            background: url(../../img/bg/game_covers/bg-game_1-s.jpg) center / cover no-repeat;
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/games/gm1/bg--gm1_cover--s.jpg) center / cover no-repeat;
+            }
+        }
+
+        &2 {
+            background: url(../../img/bg/games/gm2/bg--gm2_cover.jpg) center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/games/gm2/bg--gm2_cover--s.jpg) center / cover no-repeat;
+            }
+        }
+
+        &3 {
+            background: url(../../img/bg/games/gm3/bg--gm3_cover.jpg) center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/games/gm3/bg--gm3_cover--s.jpg) center / cover no-repeat;
+            }
         }
     }
 
-    &--game2 {
-        background: url(../../img/bg/game_covers/bg-game_2.jpg) center / cover no-repeat;
 
-        @media screen and (max-width: $mobile) {
-            background: url(../../img/bg/game_covers/bg-game_2-s.jpg) center / cover no-repeat;
-        }
-    }
-
-    &--game3 {
-        background: url(../../img/bg/game_covers/bg-game_3.jpg) center / cover no-repeat;
-
-        @media screen and (max-width: $mobile) {
-            background: url(../../img/bg/game_covers/bg-game_3-s.jpg) center / cover no-repeat;
-        }
-    }
 
 }

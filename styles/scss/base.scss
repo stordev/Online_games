@@ -3,12 +3,48 @@
 @import '_bg';
 @import '_top';
 
-body {
+.body {
     row-gap: 128*$r;
     padding: 0 calc(100vw / 12);
+    background-color: #000915;
+    display: flex;
+    flex-direction: column;
 
     @media screen and (max-width: $mobile) {
         row-gap: 128*$m;
         padding: 0 16*$m;
     }
+}
+
+.button {
+    font-size: 18*$r;
+    margin-top: 12*$r;
+    border-radius: 30*$r;
+    padding: 13*$r 74*$r;
+    width: fit-content;
+    background: #9C0332;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 18*$m;
+        border-radius: 30*$m;
+        padding: 13*$m 74*$m;
+    }
+}
+
+.text {
+    font-size: 18*$r;
+    line-height: calc(32 / 18);
+    font-weight: 300;
+    color: #aaa;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 14*$m;
+        line-height: calc(22 / 14);
+        align-content: center;
+    }
+}
+
+.bold {
+    color: #fff;
+    font-weight: bold;
 }

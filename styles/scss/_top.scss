@@ -31,41 +31,13 @@
         }
     }
 
-    &__text {
-        font-size: 18*$r;
-        line-height: calc(32 / 18);
-        font-weight: 300;
-        color: #aaa;
-
+    &__p {
         @media screen and (max-width: $mobile) {
-            font-size: 14*$m;
-            line-height: calc(22 / 14);
-            align-content: center;
             white-space: pre-line;
 
             & br {
                 display: none;
             }
-        }
-
-        & b {
-            color: #fff;
-            font-weight: bold;
-        }
-    }
-
-    &__button {
-        font-size: 18*$r;
-        margin-top: 12*$r;
-        border-radius: 30*$r;
-        padding: 13*$r 74*$r;
-        width: fit-content;
-        background: #9C0332;
-
-        @media screen and (max-width: $mobile) {
-            font-size: 18*$m;
-            border-radius: 30*$m;
-            padding: 13*$m 74*$m;
         }
     }
 
