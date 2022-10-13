@@ -1,7 +1,8 @@
 @import '_vars';
 
 .top {
-    height: 1024*$r;
+
+    min-height: 1024*$r;
     padding-top: 217*$r;
     row-gap: 32*$r;
     display: flex;
