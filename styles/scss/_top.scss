@@ -18,7 +18,7 @@
         text-align: center;
     }
 
-    &-title {
+    &__title {
         font-size: 64*$r;
         line-height: calc(78 / 64);
         font-weight: 700;
@@ -31,7 +31,7 @@
         }
     }
 
-    &-text {
+    &__text {
         font-size: 18*$r;
         line-height: calc(32 / 18);
         font-weight: 300;
@@ -54,7 +54,7 @@
         }
     }
 
-    &-button {
+    &__button {
         font-size: 18*$r;
         margin-top: 12*$r;
         border-radius: 30*$r;

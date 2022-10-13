@@ -47,42 +47,41 @@ img {
   width: 100%;
 }
 
-.bg-top {
+.bg--top {
   background: url(../../img/bg/top/bg-top.jpg) top center/cover no-repeat;
 }
 @media screen and (max-width: 767px) {
-  .bg-top {
+  .bg--top {
     background: url(../../img/bg/top/bg-top-s.jpg) top center/cover no-repeat;
   }
 }
-.bg-game_1 {
+.bg--game1 {
   background: url(../../img/bg/game_covers/bg-game_1.jpg) center/cover no-repeat;
 }
 @media screen and (max-width: 767px) {
-  .bg-game_1 {
+  .bg--game1 {
     background: url(../../img/bg/game_covers/bg-game_1-s.jpg) center/cover no-repeat;
   }
 }
-.bg-game_2 {
+.bg--game2 {
   background: url(../../img/bg/game_covers/bg-game_2.jpg) center/cover no-repeat;
 }
 @media screen and (max-width: 767px) {
-  .bg-game_2 {
+  .bg--game2 {
     background: url(../../img/bg/game_covers/bg-game_2-s.jpg) center/cover no-repeat;
   }
 }
-.bg-game_3 {
+.bg--game3 {
   background: url(../../img/bg/game_covers/bg-game_3.jpg) center/cover no-repeat;
 }
 @media screen and (max-width: 767px) {
-  .bg-game_3 {
+  .bg--game3 {
     background: url(../../img/bg/game_covers/bg-game_3-s.jpg) center/cover no-repeat;
   }
 }
 
 .top {
-  border: 1px solid #ff0;
-  height: 71.1111111111vw;
+  min-height: 71.1111111111vw;
   padding-top: 15.0694444444vw;
   row-gap: 2.2222222222vw;
   display: flex;
@@ -91,7 +90,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .top {
-    height: 196vw;
+    min-height: 196vw;
     padding-top: 0;
     row-gap: 8.5333333333vw;
     align-items: center;
@@ -99,41 +98,41 @@ img {
     text-align: center;
   }
 }
-.top-title {
+.top__title {
   font-size: 4.4444444444vw;
   line-height: 1.21875;
   font-weight: 700;
   width: 40%;
 }
 @media screen and (max-width: 767px) {
-  .top-title {
+  .top__title {
     font-size: 8.5333333333vw;
     line-height: 1.21875;
     width: 100%;
   }
 }
-.top-text {
+.top__text {
   font-size: 1.25vw;
   line-height: 1.7777777778;
   font-weight: 300;
   color: #aaa;
 }
 @media screen and (max-width: 767px) {
-  .top-text {
+  .top__text {
     font-size: 3.7333333333vw;
     line-height: 1.5714285714;
     align-content: center;
     white-space: pre-line;
   }
-  .top-text br {
+  .top__text br {
     display: none;
   }
 }
-.top-text b {
+.top__text b {
   color: #fff;
   font-weight: bold;
 }
-.top-button {
+.top__button {
   font-size: 1.25vw;
   margin-top: 0.8333333333vw;
   border-radius: 2.0833333333vw;
@@ -144,7 +143,7 @@ img {
   background: #9C0332;
 }
 @media screen and (max-width: 767px) {
-  .top-button {
+  .top__button {
     font-size: 4.8vw;
     border-radius: 8vw;
     padding: 3.4666666667vw 19.7333333333vw;
