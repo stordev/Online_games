@@ -2,6 +2,7 @@
 @import '_global';
 @import '_bg';
 @import '_top';
+@import '_main';
 
 .body {
     row-gap: 128*$r;
@@ -18,16 +19,15 @@
 
 .button {
     font-size: 18*$r;
-    margin-top: 12*$r;
     border-radius: 30*$r;
-    padding: 13*$r 74*$r;
+    padding: 12*$r 72*$r;
     width: fit-content;
     background: #9C0332;
 
     @media screen and (max-width: $mobile) {
         font-size: 18*$m;
         border-radius: 30*$m;
-        padding: 13*$m 74*$m;
+        padding: 12*$m 72*$m;
     }
 }
 

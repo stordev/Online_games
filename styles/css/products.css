@@ -1,14 +1,16 @@
-.products {
+@charset "UTF-8";
+.products--menu {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 2.2222222222vw;
 }
 @media screen and (max-width: 767px) {
-  .products {
+  .products--menu {
     grid-gap: 8.5333333333vw;
   }
 }
-.products a {
+
+.toggle {
   min-height: 20.8333333333vw;
   border-radius: 1.3888888889vw;
   font-size: 1.6666666667vw;
@@ -18,13 +20,91 @@
   display: flex;
   align-items: flex-end;
   color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 767px) {
-  .products a {
-    min-height: 80vw;
+  .toggle {
+    height: 80vw;
     border-radius: 5.3333333333vw;
     font-size: 6.4vw;
     grid-column: span 12;
     padding: 0 0 8.5333333333vw 8.5333333333vw;
   }
+}
+
+.task {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.toggle-el {
+  min-height: 34.7222222222vw;
+  gap: 2.2222222222vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .toggle-el {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 8.5333333333vw;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 13.3333333333vw;
+    padding-bottom: 80vw;
+    text-align: center;
+  }
+}
+.toggle-el__close::after {
+  font-size: 3.4722222222vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "✕";
+  background-color: transparent;
+  opacity: 50%;
+}
+@media screen and (max-width: 767px) {
+  .toggle-el__close::after {
+    font-size: 8.5333333333vw;
+  }
+}
+.toggle-el__title {
+  font-weight: 700;
+  font-size: 3.3333333333vw;
+  line-height: 2.7083333333vw;
+}
+@media screen and (max-width: 767px) {
+  .toggle-el__title {
+    font-size: 8.5333333333vw;
+    line-height: 10.4vw;
+  }
+}
+.toggle-el__disc {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .toggle-el__disc {
+    width: 100%;
+  }
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox].hide-input:checked + .toggle-el {
+  display: flex;
+}
+input[type=checkbox].hide-input + .toggle-el {
+  display: none;
 }

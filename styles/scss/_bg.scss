@@ -8,32 +8,26 @@
         }
     }
 
-    &--game {
+    // template bg
+    &--t {
         &1 {
-            background: url(../../img/bg/games/gm1/bg--gm1_cover.jpg) center / cover no-repeat;
+            background: url(../../img/bg/tasks/t1/bg--t1_cover.jpg) center / cover no-repeat;
 
             @media screen and (max-width: $mobile) {
-                background: url(../../img/bg/games/gm1/bg--gm1_cover--s.jpg) center / cover no-repeat;
+                background: url(../../img/bg/tasks/t1/bg--t1_cover--s.jpg) center / cover no-repeat;
+            }
+
+            &--img {
+                background: url(../../img/bg/tasks/t1/bg--t1--img.png) center right / calc(100% * 5 / 12) auto no-repeat;
+
+                @media screen and (max-width: $mobile) {
+                    background: url(../../img/bg/tasks/t1/bg--t1--img--s.png) center bottom / 100% auto no-repeat;
+                }
             }
         }
 
-        &2 {
-            background: url(../../img/bg/games/gm2/bg--gm2_cover.jpg) center / cover no-repeat;
-
-            @media screen and (max-width: $mobile) {
-                background: url(../../img/bg/games/gm2/bg--gm2_cover--s.jpg) center / cover no-repeat;
-            }
-        }
-
-        &3 {
-            background: url(../../img/bg/games/gm3/bg--gm3_cover.jpg) center / cover no-repeat;
-
-            @media screen and (max-width: $mobile) {
-                background: url(../../img/bg/games/gm3/bg--gm3_cover--s.jpg) center / cover no-repeat;
-            }
-        }
+        // end template bg
     }
 
-
-
+    // end bg
 }

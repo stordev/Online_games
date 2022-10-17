@@ -12,22 +12,36 @@
 
 <body class="body">
 
-    <section class="top bg--top">
+    <header class="top bg--top">
         <h1 class="top__title">Welcome to my website!</h1>
         <p class="text top__p ">You have to go through several
             exciting games. <br> If you're ready, press
             <b class="bold">let's go</b> and <b class="bold">get started</b>
         </p>
-        <a href="#" class="button">let's go</a>
-    </section>>
+        <a href="#products" class="button">let's go</a>
+    </header>
 
-    <div class="main">
-        <div class="products">
-            <a href="#" class="bg--game1">Game 1</a>
-            <a href="#" class="bg--game2">Game 2</a>
-            <a href="#" class="bg--game3">Game 3</a>
-        </div>
-    </div>
+    <main class="main">
+
+        <nav class="products--menu" id="products">
+            <label for="0001" class="toggle bg--t1">0001 | Seasons</label>
+        </nav>
+
+        <section class="products--content">
+            <div class="task">
+                <input type="checkbox" id="0001" class="hide-input">
+                <div class="toggle-el bg--t1--img">
+                    <label class="toggle-el__close" for="0001"></label>
+                    <h3 class="toggle-el__title">Seasons</h3>
+                    <p class="text toggle-el__disc">Press the Play button, enter the number of the month (from 1 to 12)
+                        and you will find out what season it belongs to</p>
+                    <a onclick="seasons()" class="button">Play</a>
+                    <script src="./js/tasks/seasons.js"></script>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer></footer>
 

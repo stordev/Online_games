@@ -1,7 +1,6 @@
 @import '_vars';
 
-.products {
-
+.products--menu {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 32*$r;
@@ -9,25 +8,99 @@
     @media screen and (max-width: $mobile) {
         grid-gap: 32*$m;
     }
+}
 
-    & a {
-        min-height: 300*$r;
-        border-radius: 20*$r;
-        font-size: 24*$r;
-        grid-column: span 4;
-        padding: 0 0 32*$r 32*$r;
-        font-weight: 600;
-        display: flex;
-        align-items: flex-end;
-        color: #fff;
+.toggle {
+    min-height: 300*$r;
+    border-radius: 20*$r;
+    font-size: 24*$r;
+    grid-column: span 4;
+    padding: 0 0 32*$r 32*$r;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    user-select: none;
+
+    @media screen and (max-width: $mobile) {
+        height: 300*$m;
+        border-radius: 20*$m;
+        font-size: 24*$m;
+        grid-column: span 12;
+        padding: 0 0 32*$m 32*$m;
+    }
+}
+
+.task {
+    height: fit-content;
+}
+
+.toggle-el {
+    min-height: 500*$r;
+    gap: 32*$r;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    position: relative;
+
+    @media screen and (max-width: $mobile) {
+        height: fit-content;
+        gap: 32*$m;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 50*$m;
+        padding-bottom: 300*$m;
+        text-align: center;
+    }
+
+    &__close::after {
+        font-size: 50*$r;
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '\2715';
+        background-color: transparent;
+        opacity: 50%;
 
         @media screen and (max-width: $mobile) {
-            min-height: 300*$m;
-            border-radius: 20*$m;
-            font-size: 24*$m;
-            grid-column: span 12;
-            padding: 0 0 32*$m 32*$m;
+            font-size: 32*$m;
         }
     }
 
+    &__title {
+        font-weight: 700;
+        font-size: 48*$r;
+        line-height: 39*$r;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 32*$m;
+            line-height: 39*$m;
+        }
+    }
+
+    &__disc {
+        width: 50%;
+
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+        }
+    }
+}
+
+input {
+    &[type=checkbox] {
+        //appearance: none;
+        display: none;
+    }
+
+    &[type=checkbox].hide-input:checked+.toggle-el {
+        display: flex;
+    }
+
+    &[type=checkbox].hide-input+.toggle-el {
+        display: none;
+    }
 }
