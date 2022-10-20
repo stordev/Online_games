@@ -65,6 +65,22 @@ img {
     background: url(../../img/bg/tasks/t1/bg--t1--img--s.png) center bottom/100% auto no-repeat;
   }
 }
+.bg--t2 {
+  background: url(../../img/bg/tasks/t2/bg--t2_cover.jpg) center/cover no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .bg--t2 {
+    background: url(../../img/bg/tasks/t2/bg--t2_cover--s.jpg) center/cover no-repeat;
+  }
+}
+.bg--t2--img {
+  background: url(../../img/bg/tasks/t2/bg--t2--img.png) center right/41.6666666667% auto no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .bg--t2--img {
+    background: url(../../img/bg/tasks/t2/bg--t2--img--s.png) center bottom/100% auto no-repeat;
+  }
+}
 
 .top {
   min-height: 71.1111111111vw;

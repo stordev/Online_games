@@ -25,6 +25,7 @@
 
         <nav class="products--menu" id="products">
             <label onclick="scrollToContent()" for="0001" class="toggle bg--t1">0001 | Seasons</label>
+            <label onclick="scrollToContent()" for="0002" class="toggle bg--t2">0002 | Memorize the words</label>
         </nav>
 
         <section class="products--content">
@@ -37,6 +38,17 @@
                         and you will find out what season it belongs to</p>
                     <a onclick="seasons()" class="button">Play</a>
                     <script src="./js/tasks/seasons.js"></script>
+                </div>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="0002" class="hide-input">
+                <div class="toggle-el bg--t2--img">
+                    <label class="toggle-el__close" for="0002"></label>
+                    <h3 class="toggle-el__title">Memorize the words</h3>
+                    <p class="text toggle-el__disc">When you click on the Play button, you will see a few words that you
+                        need to remember.</p>
+                    <a onclick="memorizeWords()" class="button">Play</a>
+                    <script src="./js/tasks/memorize_words.js"></script>
                 </div>
             </div>
         </section>
