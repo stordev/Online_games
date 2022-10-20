@@ -26,6 +26,7 @@
         <nav class="products--menu" id="products">
             <label onclick="scrollToContent()" for="0001" class="toggle bg--t1">0001 | Seasons</label>
             <label onclick="scrollToContent()" for="0002" class="toggle bg--t2">0002 | Memorize the words</label>
+            <label onclick="scrollToContent()" for="0003" class="toggle bg--t3">0003 | Guess the number</label>
         </nav>
 
         <section class="products--content">
@@ -51,6 +52,17 @@
                     <script src="./js/tasks/memorize_words.js"></script>
                 </div>
             </div>
+            <div class="task">
+                <input type="checkbox" id="0003" class="hide-input">
+                <div class="toggle-el bg--t3--img">
+                    <label class="toggle-el__close" for="0003"></label>
+                    <h3 class="toggle-el__title">Guess the number</h3>
+                    <p class="text toggle-el__disc">you need to enter a number from 1 to 100. You have 10 attempts. To
+                        break the game, type 'q'</p>
+                    Good luck!</p>
+                    <a onclick="guessTheNumber()" class="button">Play</a>
+                    <script src="./js/tasks/guess_the_number.js"></script>
+                </div>
         </section>
 
     </main>

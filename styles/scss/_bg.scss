@@ -42,6 +42,22 @@
             }
         }
 
+        &3 {
+            background: url(../../img/bg/tasks/t3/bg--t3_cover.jpg) center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/tasks/t3/bg--t3_cover--s.jpg) center / cover no-repeat;
+            }
+
+            &--img {
+                background: url(../../img/bg/tasks/t1/bg--t1--img.png) center right / calc(100% * 5 / 12) auto no-repeat;
+
+                @media screen and (max-width: $mobile) {
+                    background: url(../../img/bg/tasks/t1/bg--t1--img--s.png) center bottom / 100% auto no-repeat;
+                }
+            }
+        }
+
         // end template bg
     }
 
